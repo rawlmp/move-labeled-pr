@@ -29,6 +29,7 @@ async function run() {
     } else if (context.payload.pull_request) {
         baseObject = context.payload.pull_request;
         objectType = "PullRequest";
+        console.log(context.payload);
     }
 
     if(baseObject && labelName){
